@@ -1,0 +1,30 @@
+
+.cursor
+{
+    height: 7.5vw;
+    width:7.5vw;
+    background-color: #FF5F38;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transform: translate(-50%,-50%);
+}
+
+.cursor h1
+{
+    font-size: 1.6vw;
+    font-weight: 200vw;
+}
+
+
+/**
+ it can be varied 
+ i have just tried to give an example of it..
+
+ how it works 
+**/
