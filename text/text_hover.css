@@ -1,0 +1,97 @@
+
+
+
+/**text with image
+  just a demo
+**/
+.page4
+{
+    min-height: 100vh;
+    width:100%; 
+   position: relative;
+   z-index: 9;
+   padding: 100px 100px;
+   
+}
+
+.elem
+{
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+
+/**text**/
+
+.elem h1
+{
+    color: black;
+    font-size: 4vw;
+    transition: all ease-out 0.5s;
+}
+.text-div
+{
+    /**background-color: lightblue;**/
+    height: 65px;
+    overflow: hidden;
+    /**
+      for 2 words
+      one--shown
+      another--hidden
+      **/
+   
+}
+.elem:hover h1
+{
+    transform: translateY(-100%);
+}
+
+
+
+/**img**/
+
+.elem img
+{
+    position: absolute; 
+    opacity: 0;  
+    transition: all ease-out 0.5s;
+    transform: translateY(10%) rotate(2deg);
+}
+
+.elem img:nth-child(1)
+{
+    left:-2%;
+}
+.elem img:nth-child(3)
+{
+    right:7%;
+}
+
+.elem:hover img
+{
+    opacity: 1;
+    transform: translateY(0%) rotate(0deg);
+}
+
+
+/**
+ <div class="elem">
+                <img src="https://d33wubrfki0l68.cloudfront.net/3401770635e95968e300d88f8b9479ecbc008eeb/be2e5/assets/home/home-experience-1.webp"
+                    alt="">
+                                       ---child=1
+
+                <div class="text-div">
+                    <h1>Strategy</h1>
+                    <h1>Strategy</h1>
+                </div>
+                                       ---child=2
+
+                <img src="https://d33wubrfki0l68.cloudfront.net/188bb09da2a445d08ac5b4f706711772e50e8a17/e100a/assets/home/home-experience-2.webp"
+                    alt="">
+                                       ---child=3
+ </div>
+**/
